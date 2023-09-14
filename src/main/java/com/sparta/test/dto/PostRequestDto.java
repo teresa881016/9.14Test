@@ -1,6 +1,11 @@
 package com.sparta.test.dto;
 
-public class ItemRequestDto {
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+public class PostRequestDto {
     private Long id;
     private String title;
     private String content;

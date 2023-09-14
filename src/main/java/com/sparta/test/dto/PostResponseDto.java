@@ -1,10 +1,10 @@
 package com.sparta.test.dto;
 
-import com.sparta.test.entity.Item;
+import com.sparta.test.entity.Post;
 import lombok.Getter;
 
 @Getter
-public class ItemResponseDto {
+public class PostResponseDto {
 
     private Long id;
     private String title;
@@ -12,12 +12,12 @@ public class ItemResponseDto {
     private int price;
     private String username;
 
-    public ItemResponseDto(Item item){
-        this.id = item.getId();
-        this.title = item.getTitle();
-        this.content = item.getContent();
-        this.price = item.getPrice();
-        this.username = item.getUsername();
+    public PostResponseDto(Post post){
+        this.id = post.getId();
+        this.title = post.getTitle();
+        this.content = post.getContent();
+        this.price = post.getPrice();
+        this.username = post.getUsername();
     }
 
 
